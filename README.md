@@ -14,11 +14,14 @@ if you'd like persistent configs you can run this instead:
 
 ```bash
 docker run -d \
-    --name ayacht \ #or whatever name you want
+    --name ayacht \ 
+    # or whatever name you want
     -p 3000:3000 \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -v /path/to/config/dir/or/volume/name:/config \ # for yacht config directory
-    -v /path/to/data/dir/or/volume/name:/data \ # for yacht project/data directory
+    -v /path/to/config/dir/or/volume/name:/config \
+    # for yacht config directory
+    -v /path/to/data/dir/or/volume/name:/data \
+    # for yacht project/data directory
     ghcr.io/selfhostedpro/yacht-nuxt:main
 ```
 
